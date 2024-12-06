@@ -1,4 +1,4 @@
-FROM ruimarinho/bitcoin-core:latest
+FROM ghcr.io/retropex/bitcoin:v27.1
 RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
 ENV BITCOIN_DATA=/data
 EXPOSE 3000 8332 8333
